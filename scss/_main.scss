@@ -1,0 +1,87 @@
+.container {
+  width: 1200px;
+  @include center;
+}
+.title {
+  border-bottom: 1px solid $border-bottom-primary;
+  span {
+    color: $text-secondary;
+    vertical-align: text-top;
+  }
+}
+
+.name {
+  h1 {
+    line-height: 95px;
+  }
+  border-bottom: 2px solid $border-bottom-primary;
+}
+.skills {
+  background-color: $bgc-primary;
+  h2 {
+    width: 996px;
+    @include center;
+    text-align: center;
+    color: $text-primary;
+    border-bottom: 1px solid $border-bottom-secondary;
+    span {
+      vertical-align: text-top;
+    }
+  }
+  li {
+    width: 224px;
+    @include center;
+    border-left: 1px solid $border-left-primary;
+    p {
+      line-height: 36px;
+      color: $text-primary;
+    }
+  }
+}
+.work {
+  ul {
+    border-left: 1px solid $border-left-primary;
+    li {
+      width: 642px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+.footer {
+  background-color: $bgc-primary;
+  h2 {
+    @include center;
+    text-align: center;
+    color: $text-primary;
+    border-bottom: 1px solid $border-bottom-secondary;
+    span {
+      color: $text-primary;
+      vertical-align: text-top;
+    }
+  }
+  .footer-info {
+    text-align: center;
+    li {
+      color: $text-primary;
+      a {
+        color: $text-primary;
+        &:hover {
+          color: $text-secondary;
+        }
+      }
+    }
+  }
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  img {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+//自訂網頁padding、margin距離
+$spacer: 1rem;
+$spacer-types: (
+  0: 0,
+  1: $spacer * 0.5,
+  // 8px
+  2: $spacer * 1,
+  // 16px
+  3: $spacer * 1.5,
+  // 24px
+  4: $spacer * 2.5,
+  // 40px
+  5: $spacer * 3,
+  // 48px
+  6: $spacer * 4,
+  // 64px
+  7: $spacer * 5,
+  // 80px
+) !default;
+
+@each $name, $spacer in $spacer-types {
+  .mt-#{$name} {
+    margin-top: $spacer;
+  }
+  .mb-#{$name} {
+    margin-bottom: $spacer;
+  }
+  .ms-#{$name} {
+    margin-left: $spacer;
+  }
+  .me-#{$name} {
+    margin-right: $spacer;
+  }
+  .pt-#{$name} {
+    padding-top: $spacer;
+  }
+  .pb-#{$name} {
+    padding-bottom: $spacer;
+  }
+  .ps-#{$name} {
+    padding-left: $spacer;
+  }
+  .pe-#{$name} {
+    padding-right: $spacer;
+  }
+}

@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// 系統預設字體 body 設定
+// body {
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+// }
+
+// 第一週設計稿字體
+body {
+  font-family: 'SF Pro Text', 'Microsoft JhengHei';
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
